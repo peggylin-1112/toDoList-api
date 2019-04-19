@@ -54,10 +54,12 @@ Please upload your source code to GitHub or other similar service
 
 ## 程式執行順序
 將程式放置於可以執行laravel 的環境下，並依序照下列步驟做初始設定。
+```
     composer install
     php artisan key:generate
     php artisan make:auth
     php artisan jwt:secret
     php artisan migrate
+```
 
 進入路徑 /register 註冊一個帳號，登入並取得一個有效的token
