@@ -27,4 +27,22 @@ Route::group([
     Route::post('refresh', 'AuthController@refresh');
     Route::post('me', 'AuthController@me');
 
+    Route::resource('task', 
+          'ToDoController', 
+          ['only' => ['index', 'store', 'show', 'update', 'destroy']]
+    );
+
+});
+
+Route::group([
+    'middleware' => 'api'
+], function ($router) {
+
+    Route::resource('tasks', 
+          'ToDoController', 
+          ['only' => ['index', 'store', 'show', 'update', 'destroy']]
+    );
+
+    Route::delete('tasks', 'ToDoController@destroyAll');
+
 });
