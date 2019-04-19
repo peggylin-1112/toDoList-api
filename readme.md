@@ -24,17 +24,23 @@
 ### API List
 
 * get all to-do lists
-    /api/tasks
+
+    `/api/tasks`
 * get one to-do list
-    /api/tasks/{id}
+
+    `/api/tasks/{id}`
 * create one to-do list
-    /api/tasks
+
+    `/api/tasks`
 * update one to-do list
-    /api/tasks/{id}
+
+    `/api/tasks/{id}`
 * delete one to-do list
-    /api/tasks/{id}
+
+    `/api/tasks/{id}`
 * delete all to-do list
-    /api/tasks
+
+    `/api/tasks`
 * generate a new token
 * get token status (Only if tokens with TTL or RefreshToken)
 * api路徑 
